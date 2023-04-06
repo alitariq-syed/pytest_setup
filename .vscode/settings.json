@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "my_app"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // "python.testing.cwd":"G:/pytest_setup/my_app"
+}

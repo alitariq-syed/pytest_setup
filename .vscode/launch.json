@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Pytest",
+            "type": "python",
+            "request": "test",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "pytestArgs": [
+                "--verbose"
+            ],
+        }
+    ]
+}
