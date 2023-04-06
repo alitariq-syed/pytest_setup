@@ -4,12 +4,10 @@
         {
             "name": "Python: Pytest",
             "type": "python",
-            "request": "test",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "pytestArgs": [
-                "--verbose"
-            ],
+            "args": ["-p", "no:warnings","-s"],
+
         }
     ]
 }

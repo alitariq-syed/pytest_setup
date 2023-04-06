@@ -18,3 +18,5 @@ def initialize_mmseg_model():
 def infer_mmseg_model(model, img):
     result = inference_segmentor(model, img)
     return result
+
+#pytest -s
