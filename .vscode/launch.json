@@ -1,14 +1,14 @@
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Pytest",
-            "type": "python",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "args": ["-p", "no:warnings","-s"],
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Pytest",
+//             "type": "python",
+//             "request": "launch",
+//             "cwd": "${workspaceFolder}",
+//             "console": "integratedTerminal",
+//             "args": ["-p", "no:warnings","-s"],
 
-        }
-    ]
-}
+//         }
+//     ]
+// }
