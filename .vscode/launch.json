@@ -4,6 +4,7 @@
         {
             "name": "Python: Pytest",
             "type": "python",
+            "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": ["-p", "no:warnings","-s"],
