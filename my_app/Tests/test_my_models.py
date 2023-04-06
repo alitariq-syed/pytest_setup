@@ -1,10 +1,3 @@
-import sys
-sys.path.append("my_app")
-import os
-print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-print(os.listdir())
-print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-
 from my_scripts.my_models import infer_mmseg_model, initialize_mmseg_model
 import cv2
 import pytest
@@ -17,6 +10,10 @@ def load_demo_img():
 @pytest.fixture()
 def load_model():
     return initialize_mmseg_model()
+
+@pytest.fixture()
+def empty_img():
+    return None
 
 def test_model_init():
     segmentation_model = initialize_mmseg_model()
@@ -31,3 +28,10 @@ def test_model_inference(load_demo_img, load_model):
     assert result is not None
     assert isinstance(result, list)
     assert result[0].dtype == np.int64
+
+def test_empty_image(empty_img, load_model):
+    img = empty_img
+    model = load_model
+    with pytest.raises(TypeError): #, match="my error message"
+        infer_mmseg_model(model,img)
+  
